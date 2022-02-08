@@ -1,5 +1,4 @@
 # P4_meeting_app
- OpenClassrooms
 C’est le 4éme projet de mon parcours Développeur d'application - Android chez openclassrooms: 
 « Créez une application de gestion de réunions » 
 
