@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddReunion"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_subject_24">
+
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subjectTextInputEditText"
+        android:textSize="@dimen/size_text"
+        android:inputType="text"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelsalle"
+        tools:ignore="MissingConstraints"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        app:layout_constraintTop_toBottomOf="@id/subject"
+        app:layout_constraintStart_toStartOf="@id/subject"
+        app:layout_constraintEnd_toEndOf="@id/subject"
+        app:startIconDrawable="@drawable/ic_baseline_meeting_room_24">
+    >
+    <AutoCompleteTextView
+        android:id="@+id/salleautoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:textSize="@dimen/size_text"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_reunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labeldate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/salle"
+        app:layout_constraintStart_toStartOf="@id/subject"
+        app:layout_constraintEnd_toEndOf="@id/subject"
+        app:startIconDrawable="@drawable/ic_baseline_calendar">
+    >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateTextInputEditText"
+            android:textSize="@dimen/size_text"
+            android:inputType="date"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/date_reunion"
+        app:layout_constraintStart_toStartOf="@id/subject"
+        app:layout_constraintEnd_toEndOf="@id/subject"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24">
+    >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hourTextInputEditText"
+            android:textSize="@dimen/size_text"
+            android:inputType="time"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/listparticipants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/hour"
+        app:layout_constraintStart_toStartOf="@id/subject"
+        app:layout_constraintEnd_toEndOf="@id/subject"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listparticipantTextInputEditText"
+            android:textSize="@dimen/size_text"
+            android:inputType="textAutoComplete"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableEnd="@drawable/ic_baseline_add_24"
+        android:text="Ajouter"
+        app:layout_constraintEnd_toEndOf="@id/subject"
+        app:layout_constraintStart_toStartOf="@id/subject"
+        app:layout_constraintTop_toBottomOf="@id/listparticipants" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

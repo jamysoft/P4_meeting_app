@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailReunionActivity"
+    >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/salle"
+        android:visibility="invisible"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/entetereunion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/size_text"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:text="A PROPOS"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/entetereunion" />
+
+    <ImageView
+        android:id="@+id/subjecticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_baseline_subject_24"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
+    <TextView
+        android:id="@+id/sujet_reunion_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/subjecticon"
+        app:layout_constraintLeft_toRightOf="@id/subjecticon"
+        tools:text="Reunion A"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_text"
+        />
+
+    <ImageView
+        android:id="@+id/timeicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintStart_toStartOf="@id/subjecticon"
+        app:layout_constraintTop_toTopOf="@id/subjecticon" />
+
+    <TextView
+        android:id="@+id/date_reunion_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/timeicon"
+        app:layout_constraintTop_toTopOf="@id/timeicon"
+        android:layout_marginLeft="50dp"
+        tools:text="11/10/2020 à 14:30"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_text"
+        />
+
+    <ImageView
+        android:id="@+id/roomicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_meeting_room_24"
+        app:layout_constraintStart_toStartOf="@id/timeicon"
+        app:layout_constraintTop_toTopOf="@id/timeicon" />
+
+    <TextView
+        android:id="@+id/salle_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintLeft_toRightOf="@id/roomicon"
+        app:layout_constraintTop_toTopOf="@id/roomicon"
+        tools:text="Salle A"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"
+        android:textSize="@dimen/size_text"
+        />
+
+    <ImageView
+        android:id="@+id/particpantcicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintStart_toStartOf="@id/roomicon"
+        app:layout_constraintTop_toTopOf="@id/roomicon" />
+
+    <TextView
+        android:id="@+id/listparticipants_detail"
+        android:layout_width="@dimen/listparticipant_detail"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintLeft_toRightOf="@id/particpantcicon"
+        app:layout_constraintTop_toTopOf="@id/particpantcicon"
+        tools:text="caroline@gmail.com,jamy.e@gmail.com"
+        android:layout_marginLeft="0dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_text"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

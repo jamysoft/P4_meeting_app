@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Meeting-App</string>
+    <string name="dialog_title">Liste des participants</string>
+    <string name="dismiss_label">Annuler</string>
+    <string name="clear_all_label">Initialiser</string>
+    <string name="ok_label">OK</string>
+    <string name="label">Sujet</string>
+    <string name="labelsalle">Salle</string>
+    <string name="labeldate">Date de la reunion</string>
+    <string name="label4">Heure</string>
+    <string name="label5">Liste des participants</string>
+    <string name="dialog_salle_title">Liste des salles</string>
+
+    <!--String array-->
+    <string-array name="room">
+        <item>Salle A</item>
+        <item>Salle B</item>
+        <item>Salle C</item>
+        <item>Salle D</item>
+        <item>Salle E</item>
+        <item>Salle F</item>
+        <item>Salle G</item>
+        <item>Salle H</item>
+        <item>Salle I</item>
+        <item>Salle J</item>
+    </string-array>
+
+    <string-array name="mails">
+        <item>jamy@gmail.com</item>
+        <item>j.eli@gmail.com</item>
+        <item>yoyo.el@gmail.com</item>
+        <item>jamila.ti@gmail.com</item>
+        <item>jam.yati@gmail.com</item>
+        <item>yoyo.elti@gmail.com</item>
+    </string-array>
+</resources>

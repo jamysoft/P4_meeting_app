@@ -1,0 +1,72 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_filtre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labeldate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        layout_constraintEnd_toEndOf="parent"
+        layout_constraintHorizontal_bias="0.0"
+        layout_constraintStart_toStartOf="parent"
+        layout_constraintTop_toTopOf="parent"
+        android:padding="4dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_filtreTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/cancel_date_filtre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_cancel_24"
+        app:layout_constraintEnd_toEndOf="@id/date_filtre"
+         app:layout_constraintTop_toTopOf="@id/date_filtre"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/salle_filtre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelsalle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_filtre"
+        android:padding="4dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/salle_filtreTextInputEditText"
+            android:textSize="@dimen/size_text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/cancel_salle_filtre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_cancel_24"
+        app:layout_constraintEnd_toEndOf="@id/salle_filtre"
+        app:layout_constraintTop_toTopOf="@id/salle_filtre"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

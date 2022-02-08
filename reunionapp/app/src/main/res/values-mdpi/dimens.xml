@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="size_about_reunion">13sp</dimen>
+   <dimen name="size_text">13sp</dimen>
+    <dimen name="size_icon_reunion">30dp</dimen>
+    <dimen name="width_participants">200dp</dimen>
+    <dimen name="width_delete">24dp</dimen>
+    <dimen name="listparticipant_detail">250dp</dimen>
+    <dimen name="width_filter">24dp</dimen>
+    <dimen name="height_icon_detail">100dp</dimen>
+</resources>
