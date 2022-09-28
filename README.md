@@ -17,3 +17,5 @@ Pour compiler et executer cette application crée un équipement virtuel ,pour f
 
 Sélectionnez l'équipement que vous avez crée puis cliquez sur run. 
 Normalement, l'émulateur devrait se lancer, et après le chargement d'Android, vous devriez voir apparaître l'application.
+
+![meeting-app](https://user-images.githubusercontent.com/94085967/192892881-e2ad85bf-b771-4212-b689-d47d12d02da8.gif)
